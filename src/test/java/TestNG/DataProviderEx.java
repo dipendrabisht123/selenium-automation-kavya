@@ -1,18 +1,7 @@
 package TestNG;
 
-import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Iterator;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 public class DataProviderEx {
 	
@@ -40,11 +29,11 @@ public class DataProviderEx {
       };
   }
   
-  @DataProvider
+ /* @DataProvider
   public Object[][] dataProviderExcel() {
 	  
 	  String[][] credArray= new String [2][2]; 
-		/*try {
+		try {
 			XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("./Data/Credentials.xlsx")));
 			
 			XSSFSheet sheet = workbook.getSheetAt(0);
@@ -74,11 +63,11 @@ public class DataProviderEx {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}*/
+		}
 		
 		return credArray;
 	
-  }
+  }*/
 
 }
 
