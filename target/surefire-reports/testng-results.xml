@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="1" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="62151" started-at="2020-06-25T02:06:25Z" finished-at="2020-06-25T02:07:27Z">
+    <groups>
+      <group name="Regression">
+        <method signature="Annotations.testMethod1(java.lang.String, java.lang.String, int)[pri:3, instance:TestNG.Annotations@13a57a3b]" name="testMethod1" class="TestNG.Annotations"/>
+        <method signature="Annotations.testMethod2(java.lang.String)[pri:1, instance:TestNG.Annotations@13a57a3b]" name="testMethod2" class="TestNG.Annotations"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="Annotations.testMethod1(java.lang.String, java.lang.String, int)[pri:3, instance:TestNG.Annotations@13a57a3b]" name="testMethod1" class="TestNG.Annotations"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="TestRegression" duration-ms="62151" started-at="2020-06-25T02:06:25Z" finished-at="2020-06-25T02:07:27Z">
+      <class name="TestNG.Annotations">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNG.Annotations@13a57a3b]" name="beforeSuite" is-config="true" duration-ms="385" started-at="2020-06-25T02:06:25Z" finished-at="2020-06-25T02:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUpBeforeTest()[pri:0, instance:TestNG.Annotations@13a57a3b]" name="setUpBeforeTest" is-config="true" duration-ms="40315" started-at="2020-06-25T02:06:25Z" finished-at="2020-06-25T02:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNG.Annotations@13a57a3b]" name="setupTest" is-config="true" duration-ms="4237" started-at="2020-06-25T02:07:05Z" depends-on-methods="TestNG.TestBase.setUpBeforeTest" finished-at="2020-06-25T02:07:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="FAIL" signature="testMethod2(java.lang.String)[pri:1, instance:TestNG.Annotations@13a57a3b]" name="testMethod2" duration-ms="181" started-at="2020-06-25T02:07:11Z" finished-at="2020-06-25T02:07:11Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at TestNG.MyITestListener.onTestSuccess(MyITestListener.java:21)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method status="FAIL" signature="testMethod1(java.lang.String, java.lang.String, int)[pri:3, instance:TestNG.Annotations@13a57a3b]" name="testMethod1" duration-ms="9" started-at="2020-06-25T02:07:11Z" finished-at="2020-06-25T02:07:11Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at TestNG.MyITestListener.onTestSuccess(MyITestListener.java:21)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method status="PASS" signature="cleanupTest()[pri:0, instance:TestNG.Annotations@13a57a3b]" name="cleanupTest" is-config="true" duration-ms="16209" started-at="2020-06-25T02:07:11Z" finished-at="2020-06-25T02:07:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupTest -->
+      </class> <!-- TestNG.Annotations -->
+    </test> <!-- TestRegression -->
+  </suite> <!-- Suite -->
+</testng-results>

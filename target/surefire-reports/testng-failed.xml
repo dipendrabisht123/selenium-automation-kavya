@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestNG.MyITestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="TestRegression(failed)">
+    <classes>
+      <class name="TestNG.Annotations">
+        <parameter name="driver" value="WebDriver"/>
+        <parameter name="version" value="70"/>
+        <parameter name="browser" value="Chrome"/>
+        <methods>
+          <include name="testMethod2"/>
+          <include name="setUpBeforeTest"/>
+          <include name="setupTest"/>
+          <include name="testMethod1"/>
+          <include name="beforeSuite"/>
+          <include name="cleanupTest"/>
+        </methods>
+      </class> <!-- TestNG.Annotations -->
+    </classes>
+  </test> <!-- TestRegression(failed) -->
+</suite> <!-- Failed suite [Suite] -->
