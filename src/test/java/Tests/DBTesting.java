@@ -13,7 +13,7 @@ public class DBTesting {
 	
   @Test
   public void f() {
-	  Connection con = null;
+	  /*Connection con = null;
 	  Statement stat = null;
 	  try {
 		// load DB drivers.
@@ -59,7 +59,7 @@ public class DBTesting {
 			e.printStackTrace();
 		}
 		
-	}
+	}*/
 	  
 	  
   }
