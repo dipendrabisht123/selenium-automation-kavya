@@ -35,7 +35,7 @@ public class Annotations extends TestBase {
 			System.out.println("In-Correct version: " + iVersion);
 		}
 
-		System.out.println("Driver name: " + sDriver);
+		System.out.println("Driver name is: " + sDriver);
 
 		/*
 		 * if(1==1){ throw new SkipException("Skipping this test case !!!"); }
